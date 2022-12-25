@@ -1,0 +1,65 @@
+@import url(./normalize.css);
+@import url(./reset.css);
+@import url(./base.css);
+
+/* 기본 스타일  */
+
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* 네비게이션 바 */
+.nav {
+  background: #fff;
+  border-bottom: 1px solid black;
+}
+
+.nav-inner {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  max-width: var(--content-width);
+  margin: 0 auto;
+  padding: var(--spacing-10px) var(--spacing-20px);
+}
+
+.nav-inner button {
+  padding: var(--spacing-10px) var(--spacing-20px);
+  background: transparent;
+  border: none;
+  font-weight: bold;
+}
+
+.nav-inner button:hover {
+  color: skyblue;
+}
+
+/* 메인 콘텐츠 */
+
+.main {
+  height: 90vh;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+}
+
+.main-title {
+  background-color: black;
+  color: white;
+  font-size: 48px;
+  padding: var(--spacing-10px) var(--spacing-20px);
+  margin-bottom: 40px;
+  border-radius: 10px;
+}
+
+.button-colorFlip {
+  padding: var(--spacing-10px) var(--spacing-20px);
+  border-radius: 10px;
+  background: transparent;
+}
